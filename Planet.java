@@ -1,8 +1,7 @@
-
-class Country
+class Planet
        {
-           void isItCountry(String s)
+           void isItPlanet(String s)
            {
-               System.out.printf("%s is a country", s).println();
+               System.out.printf("%s is a planet", s).println();
            }
        }
