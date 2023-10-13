@@ -1,14 +1,14 @@
 class Planet
 {
+    static void revolve()
+    {
+        System.out.println("Revolve");
+    }
+
     public static void main(String[] args)
     {
-        String mars = "mars";
-        isItPlanet(mars);
+        Planet earth = new Planet();
+
+        earth.revolve();
     }
-    
-	static void isItPlanet(String s)
-    {
-        System.out.printf("%s is a planet", s).println();
-    }
-    
 }
