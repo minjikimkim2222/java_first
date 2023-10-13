@@ -1,6 +1,6 @@
 class Planet
 {
-    static void revolve()
+    void revolve()
     {
         System.out.println("Revolve");
     }
