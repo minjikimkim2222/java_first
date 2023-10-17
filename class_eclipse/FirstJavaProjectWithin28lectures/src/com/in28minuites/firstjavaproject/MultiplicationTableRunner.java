@@ -10,7 +10,9 @@ public class MultiplicationTableRunner {
 		System.out.println("method overloading");
 		//table.print(7);
 		System.out.println("more general method");
-		table.print(3, 2, 12);
+		System.out.println("avoid duplication, refactoring");
+		table.print();
+		
 		
 	}
 
