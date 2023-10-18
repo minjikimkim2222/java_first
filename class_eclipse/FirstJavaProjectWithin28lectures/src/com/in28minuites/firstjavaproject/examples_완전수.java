@@ -56,7 +56,6 @@ class PerfectNumberChecker {
 		}
 
 		sum -= number;
-		System.out.println("sum : " + sum);
 
 		if (sum == number) {
 			isItPerfectNumber = true;
