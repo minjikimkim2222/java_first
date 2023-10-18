@@ -11,9 +11,10 @@ public class MultiplicationTableRunner {
 		//table.print(7);
 		System.out.println("more general method");
 		System.out.println("avoid duplication, refactoring");
+
 		table.print();
-		
-		
+		table.print(6, 3, 4);
+
 	}
 
 }
