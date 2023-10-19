@@ -6,6 +6,10 @@ public class MotorBike {
 	private int speed;
 
 	// behavior
+	MotorBike(int speed) {
+		this.speed = speed;
+	}
+
 	public void start() {
 		System.out.println("Bike started");
 	}

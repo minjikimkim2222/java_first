@@ -4,20 +4,20 @@ public class BookRunner {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Book harryPotter = new Book();
-		Book effectiveJava = new Book();
+		Book harryPotter = new Book(100);
+		Book effectiveJava = new Book(50);
 
-		harryPotter.setVar(100);
-		effectiveJava.setVar(30);
+//		harryPotter.setVar(100);
+//		effectiveJava.setVar(30);
+//
+//		harryPotter.increaseVar(200);
+//		effectiveJava.increaseVar(70);
+//
+//		harryPotter.decreaseVar(90);
+//		effectiveJava.decreaseVar(30);
 
-		harryPotter.increaseVar(200);
-		effectiveJava.increaseVar(70);
-
-		harryPotter.decreaseVar(90);
-		effectiveJava.decreaseVar(30);
-
-		System.out.println(harryPotter.getVar()); // 210
-		System.out.println(effectiveJava.getVar()); // 70
+		System.out.println(harryPotter.getVar());
+		System.out.println(effectiveJava.getVar());
 	}
 
 }

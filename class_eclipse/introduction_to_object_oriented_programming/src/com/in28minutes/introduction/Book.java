@@ -3,6 +3,10 @@ package com.in28minutes.introduction;
 public class Book {
 	private int noOfCopies;
 
+	Book(int val) {
+		noOfCopies = val;
+	}
+
 	void setVar(int noOfCopies) {
 		if (noOfCopies > 0)
 			this.noOfCopies = noOfCopies;
