@@ -10,7 +10,7 @@ public class Menu {
 		this.number2 = number2;
 	}
 
-	public int operation(int num) {
+	public int operationUsingNestedIfElse(int num) {
 		if (num == 1) {
 			return (number1 + number2);
 		} else if (num == 2) {
@@ -20,6 +20,21 @@ public class Menu {
 		} else if (num == 4) {
 			return (number1 * number2);
 		} else {
+			return (-1);
+		}
+	}
+
+	public int operationUsingSwitch(int num) {
+		switch (num) {
+		case 1:
+			return (number1 + number2);
+		case 2:
+			return (number1 - number2);
+		case 3:
+			return (number1 / number2);
+		case 4:
+			return (number1 * number2);
+		default:
 			return (-1);
 		}
 	}

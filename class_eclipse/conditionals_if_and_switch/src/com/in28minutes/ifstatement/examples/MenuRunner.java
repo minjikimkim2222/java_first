@@ -23,8 +23,9 @@ public class MenuRunner {
 		Scanner scanner3 = new Scanner(System.in);
 		int operationNum = scanner3.nextInt();
 
-		int result = menu.operation(operationNum);
+		// int result = menu.operationUsingNestedIfElse(operationNum);
 
+		int result = menu.operationUsingSwitch(operationNum);
 		if (result == -1) {
 			System.out.println("invalid operation");
 
