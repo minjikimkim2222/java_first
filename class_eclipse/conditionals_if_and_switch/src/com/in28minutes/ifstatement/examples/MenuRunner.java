@@ -25,7 +25,12 @@ public class MenuRunner {
 
 		int result = menu.operation(operationNum);
 
-		System.out.println("Result is : " + result);
+		if (result == -1) {
+			System.out.println("invalid operation");
+
+		} else {
+			System.out.println("Result is : " + result);
+		}
 	}
 
 }

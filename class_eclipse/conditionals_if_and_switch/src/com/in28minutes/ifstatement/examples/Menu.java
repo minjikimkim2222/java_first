@@ -17,8 +17,10 @@ public class Menu {
 			return (number1 - number2);
 		} else if (num == 3) {
 			return (number1 / number2);
-		} else {
+		} else if (num == 4) {
 			return (number1 * number2);
+		} else {
+			return (-1);
 		}
 	}
 
