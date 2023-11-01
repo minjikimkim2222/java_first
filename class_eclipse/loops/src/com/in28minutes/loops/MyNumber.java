@@ -39,11 +39,10 @@ public class MyNumber {
 
 	public void printANumberTriangle() {
 		for (int i = 0; i < num; i++) {
-			for (int j = 0; i >= j; j++) {
+			for (int j = 0; j <= i; j++) { // j를 i까지
 				System.out.print(j + 1 + " ");
 			}
 			System.out.println();
 		}
 	}
-
 }
