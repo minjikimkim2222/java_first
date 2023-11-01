@@ -9,15 +9,15 @@ public class MyNumber {
 	}
 
 	public boolean isPrime() { // 1과 자기자신을 제외한 다른 숫자로 나눠지면 안되는 숫자 = 소수
-		if (num == 1)
+		if (num < 2)
 			return (false); // 1은 소수가 아니
-		else {
-			for (int i = 2; i < num; i++) {
-				if (num % i == 0)
-					return (false);
-			}
-			return (true);
+
+		for (int i = 2; i < num; i++) {
+			if (num % i == 0)
+				return (false);
 		}
+		return (true);
+
 	}
 
 	public int sumUptoN() { // Sum of numbers upto N
