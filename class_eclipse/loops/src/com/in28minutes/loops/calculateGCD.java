@@ -18,6 +18,7 @@ public class calculateGCD {
 	}
 
 	public int getGCD() {
+
 		if (number1 < 0 || number2 < 0)
 			return (1);
 		if (number1 == 0 || number2 == 0)
@@ -26,18 +27,35 @@ public class calculateGCD {
 			return (number1);
 
 		int min = Math.min(number1, number2);
-
 		int gcd = 1;
-		int finalGCD = 1;
-		while (true) {
 
-			if (gcd == min)
-				return (finalGCD);
-
-			if (number1 % gcd == 0 && number2 % gcd == 0)
-				finalGCD = gcd;
-			gcd++;
+		for (int i = min; i > 0; i--) {
+			if (number1 % i == 0 && number2 % i == 0) {
+				gcd = i;
+				break;
+			}
 		}
+		return (gcd);
+//		if (number1 < 0 || number2 < 0)
+//			return (1);
+//		if (number1 == 0 || number2 == 0)
+//			return (0);
+//		if (number1 == number2)
+//			return (number1);
+//
+//		int min = Math.min(number1, number2);
+//
+//		int gcd = 1;
+//		int finalGCD = 1;
+//		while (true) {
+//
+//			if (gcd == min)
+//				return (finalGCD);
+//
+//			if (number1 % gcd == 0 && number2 % gcd == 0)
+//				finalGCD = gcd;
+//			gcd++;
+//		}
 
 	}
 }
