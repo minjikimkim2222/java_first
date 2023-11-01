@@ -8,10 +8,10 @@ public class Company {
 	private String mainProduct; // 주력상품
 	private String bestSellingProduct; // 제일 잘 나가는 상품
 	private String foundingDate; // 창립일자
-	private String stock; // 주식
+	private int totalProductCount; // 상품 총 개수
 
 	public Company(int category, String name, double revenue, double profit, String mainProduct,
-			String bestSellingProduct, String foundingDate, String stock) {
+			String bestSellingProduct, String foundingDate, int totalProductCount) {
 		companyCategory(category);
 		this.name = name;
 		this.revenue = revenue;
@@ -19,7 +19,7 @@ public class Company {
 		this.mainProduct = mainProduct;
 		this.bestSellingProduct = bestSellingProduct;
 		this.foundingDate = foundingDate;
-		this.stock = stock;
+		this.totalProductCount = totalProductCount;
 	}
 
 	void companyCategory(int category) { // 생성자 정수값에 따라 다른 종류 초기화
@@ -39,4 +39,51 @@ public class Company {
 			this.category = "기타";
 		}
 	}
+
+	// get 함수
+	public String getCategory() {
+		return this.category;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public double getRevenue() {
+		return this.revenue;
+	}
+
+	public double getProfit() {
+		return this.profit;
+	}
+
+	public String getMainProduct() {
+		return this.mainProduct;
+	}
+
+	public String getBestSellingProduct() {
+		return this.bestSellingProduct;
+	}
+
+	public String getFoundingDate() {
+		return this.foundingDate;
+	}
+
+	public int getTotalProductCount() {
+		return this.totalProductCount;
+	}
+
+	// 증감연산자로 상품 수량 조절
+	public void AddProductCount(int howMany) {
+		this.totalProductCount += howMany;
+	}
+
+	public void SubProductCount(int howMany) {
+		this.totalProductCount -= howMany;
+		if (totalProductCount <= 0) {
+			System.out.println("상품 개수가 더이상 남지 않았습니다 ");
+			return;
+		}
+	}
+
 }
