@@ -28,7 +28,7 @@ public class calculateLCM {
 		int max = Math.max(number1, number2);
 		int min = Math.min(number1, number2);
 
-		if (max % number1 == 0)
+		if (max % min == 0)
 			return (max);
 
 		int num = 2;
