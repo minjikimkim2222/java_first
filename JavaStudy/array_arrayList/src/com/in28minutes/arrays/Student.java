@@ -1,7 +1,9 @@
-package array_arrayList;
+
+package com.in28minutes.arrays;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+
 
 public class Student {
 	private String name;
@@ -11,6 +13,7 @@ public class Student {
 		this.name = name;
 		this.marks = marks;
 	}
+
 
 	public int getNumberOfMarks() {
 //		int count = 0;
