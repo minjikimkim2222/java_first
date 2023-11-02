@@ -8,6 +8,7 @@ public class calculateGCDRunner {
 
 		int result = gcd.getGCD();
 		System.out.println("gcd is " + result);
+
 	}
 
 }
