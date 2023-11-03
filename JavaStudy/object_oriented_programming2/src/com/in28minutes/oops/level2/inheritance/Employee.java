@@ -25,11 +25,13 @@ public class Employee extends Person {
 	}
 
 	public String toString() {
-		String employeeStr = "jobTitle : " + jobTitle + " employerName : " + employerName + " employeeGrade : "
-				+ employeeGrade + " salary : " + salary;
+//		String employeeStr = "jobTitle : " + jobTitle + " employerName : " + employerName + " employeeGrade : "
+//				+ employeeGrade + " salary : " + salary;
+//
+//		String personStr = "\n + name : " + getName() + " email : " + getEmail() + " phone : " + getPhoneNumber();
+//		return employeeStr + personStr;
 
-		String personStr = "\n + name : " + getName() + " email : " + getEmail() + " phone : " + getPhoneNumber();
-		return employeeStr + personStr;
+		return super.toString() + "#" + jobTitle + "#" + employerName + "#" + employeeGrade;
 	}
 
 }
