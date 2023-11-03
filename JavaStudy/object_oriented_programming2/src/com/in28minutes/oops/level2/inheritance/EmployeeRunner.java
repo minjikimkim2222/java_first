@@ -11,7 +11,7 @@ public class EmployeeRunner {
 
 		employee.setJobTitle("회장 ");
 		employee.setName("minji");
-		employee.setPhoneNumber("010-xyxy-3333");
+		employee.setEmployeeGrade('A');
 		employee.setSalary(10000000);
 
 		System.out.println(employee.toString());
