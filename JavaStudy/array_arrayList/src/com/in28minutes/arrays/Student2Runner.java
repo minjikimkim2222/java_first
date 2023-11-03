@@ -2,13 +2,13 @@ package com.in28minutes.arrays;
 
 import java.math.BigDecimal;
 
-public class StudentRunner {
+public class Student2Runner {
 
 	public static void main(String[] args) {
 		
 		int[] marks = {100, 1200, 90};
 
-		Student student = new Student("minji", marks);
+		Student2 student = new Student2("minji", marks);
 		
 		int number = student.getNumberOfMarks();
 		System.out.println("number : " + number);
@@ -24,6 +24,9 @@ public class StudentRunner {
 		
 		BigDecimal average = student.getAverageMask();
 		System.out.println("average : " + average);
+		
+		student.addNewMark(34);
+		student.removeMarkAtIndex(0);
 
 	}
 

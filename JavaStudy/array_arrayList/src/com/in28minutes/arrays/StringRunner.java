@@ -12,10 +12,11 @@ public class StringRunner {
 				longestString = days[i + 1];
 			}
 		}
-		System.out.println("Day with longest String" + longestString);
+		System.out.println("Day with longest String " + longestString + '\n');
 		
-		for (String day : days) {
-			System.out.println(day);
+		//  요일을 역순으로 출력할 것 
+		for (int i = days.length-1; i >= 0; i--) {
+			System.out.println(days[i]);
 		}
 	}
 
