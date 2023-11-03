@@ -1,11 +1,13 @@
 package com.in28minutes.oops.level2;
 
+import java.util.ArrayList;
+
 public class Book {
 	// state
 	private int id;
 	private String name;
 	private String author;
-	private Review review;
+	private ArrayList<Review> review = new ArrayList<Review>(); // class도 일종의 자료형이다
 
 	// constuctor
 	public Book(int id, String name, String author) {
@@ -16,7 +18,7 @@ public class Book {
 	}
 
 	public void addReview(Review review) {
-		this.review = review;
+		this.review.add(review);
 	}
 
 	// toString
