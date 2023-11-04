@@ -30,7 +30,6 @@ public class Employee extends Person {
 //
 //		String personStr = "\n + name : " + getName() + " email : " + getEmail() + " phone : " + getPhoneNumber();
 //		return employeeStr + personStr;
-
 		return super.toString() + "#" + jobTitle + "#" + employerName + "#" + employeeGrade;
 	}
 
