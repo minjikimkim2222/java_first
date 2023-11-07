@@ -8,6 +8,13 @@ public class Employee extends Person {
 
 	// setter
 
+	public Employee(String name, String title) {
+		// super();
+		super(name);
+		System.out.println("Employee Constructor");
+		this.jobTitle = title;
+	}
+
 	public void setJobTitle(String jobTitle) {
 		this.jobTitle = jobTitle;
 	}

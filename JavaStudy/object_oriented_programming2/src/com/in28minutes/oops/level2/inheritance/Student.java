@@ -5,6 +5,10 @@ public class Student extends Person {
 
 	private int myClass;
 
+	public Student(String name) {
+		super(name);
+	}
+
 	public String getCollege() {
 		return college;
 	}
