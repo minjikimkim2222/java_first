@@ -35,9 +35,12 @@ public class StudentCollectionRunner {
 
 		System.out.println("내림차순 " + studentsAI);
 
-		Collections.sort(studentsAI, new DescendingStudentComparator());
+//		Collections.sort(studentsAI, new DescendingStudentComparator());
+//
+//		System.out.println("DescedingStudentComparator " + studentsAI);
 
-		System.out.println("DescedingStudentComparator " + studentsAI);
+		studentsAI.sort(new DescendingStudentComparator());
+		System.out.println("ArrayList에도 구현된 sort함수, 비교자 이 용 " + studentsAI);
 	}
 
 }
