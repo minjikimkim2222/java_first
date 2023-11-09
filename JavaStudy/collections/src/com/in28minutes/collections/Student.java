@@ -34,17 +34,8 @@ public class Student implements Comparable<Student> { // 다른 학생과 비교
 	@Override
 	public int compareTo(Student that) {
 
-//		return (Integer.compare(this.id, that.id)); // 오름차순 
+//		return (Integer.compare(this.id, that.id)); // 오름차순
 		return (Integer.compare(that.id, this.id)); // 내림차순
 	}
-	/*
-	 * compareTo 메소드가 음수를 반환하면, Collections.sort 메소드는 첫 번째 객체를 두 번째 객체보다 앞쪽에 배치하게
-	 * 됩니다. 이는 첫 번째 객체가 두 번째 객체보다 작다는 의미입니다.
-	 * 
-	 * 반대로, compareTo 메소드가 양수를 반환하면, Collections.sort 메소드는 첫 번째 객체를 두 번째 객체보다 뒤쪽에
-	 * 배치하게 됩니다. 이는 첫 번째 객체가 두 번째 객체보다 크다는 의미입니다.
-	 * 
-	 * 결국, compareTo 메소드의 반환값에 따라 객체들이 정렬되는 순서가 결정되게 됩니다.
-	 * 
-	 */
+
 }

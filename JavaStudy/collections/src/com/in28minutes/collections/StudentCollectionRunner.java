@@ -2,7 +2,18 @@ package com.in28minutes.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
+class DescendingStudentComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student student1, Student student2) {
+
+		return (Integer.compare(student1.getId(), student2.getId()));
+	}
+
+}
 
 public class StudentCollectionRunner {
 
@@ -21,9 +32,12 @@ public class StudentCollectionRunner {
 		Collections.sort(studentsAI);
 
 		System.out.println("sort after");
-		for (Student student : studentsAI) {
-			System.out.println(student);
-		}
+
+		System.out.println("내림차순 " + studentsAI);
+
+		Collections.sort(studentsAI, new DescendingStudentComparator());
+
+		System.out.println("DescedingStudentComparator " + studentsAI);
 	}
 
 }
